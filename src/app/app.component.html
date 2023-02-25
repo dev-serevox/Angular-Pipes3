@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=!, initial-scale=1.0" />
+    <title>Slice and Decimal Pipes</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- left-start -->
+      <section class="left">
+        <div class="left-container">
+          <section class="header">
+            <div class="header-container">
+              <figure>
+                <img
+                  src="https://i.postimg.cc/KvbWmLbj/angular.png"
+                  alt="profile"
+                />
+              </figure>
+              <span class="span-bold">ANGULAR SLICE PIPE</span>
+            </div>
+          </section>
+          <section class="main">
+            <p class="p-light">Start index:- {{ Fruits | slice: 2 }}</p>
+            <br />
+            <p class="p-light">
+              Start and End index:- {{ Fruits | slice: 1:4 }}
+            </p>
+            <br />
+            <p class="p-light">Negative index:- {{ Fruits | slice: -2 }}</p>
+            <br />
+            <p class="p-light">
+              Negative start and End index:- {{ Fruits | slice: -4:-2 }}
+            </p>
+          </section>
+        </div>
+      </section>
+      <!-- left-end -->
+    </div>
+  </body>
+</html>
